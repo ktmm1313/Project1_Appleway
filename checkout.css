@@ -6,73 +6,100 @@ body {
 }
 body {
   display: flex;
-  height: 100vh;
+  /* height: 100vh; */
+  flex-flow: row wrap;
 }
 
 .lineItems {
   display: flex;
-  width: 50%;
+  width: 100%;
+  height: 65vh;
   background-color: lightgreen;
   justify-content: center;
   align-items: center;
+  font-size: 2rem;
 }
 
 .creditCard {
-    display: flex;
-    width: 50%;
-    background-color: #ffffff;
-    justify-content: center;
-    align-items: center;   
+  display: flex;
+  width: 100%;
+  height: 35vh;
+  justify-content: center;
+  align-items: center;
 }
- #ccInfo {
+#ccInfo {
   display: block;
-  width: 50%;
+  width: 90%;
   padding: 40px;
   border-radius: 5px;
   background-color: #ffffff;
   margin: auto;
   font-size: 1rem;
- }
- input {
-    width: 100%;
-    padding: 5px;
-    border-radius: 5px;
-    margin: .5rem 0;
-  }
-
-
+}
+input {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+}
 
 @media only screen and (min-width: 768px) {
-    html body {
+  /* html body {
         background-color: #f9fafc;
         height: 100vh;
         font-family: "Open Sans";
       }
-    
-      header {
-        display: flex;
-        flex-direction: row;
-      }
-    
-      .lineItems {
-        display: flex;
-        width: 50%;
-      }
+      body {
+        display: flex; */
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  body {
+    display: flex;
+    height: 100vh;
+  }
 
-      .creditCard {
-        display: flex;
-        width: 50%;
-        background-color: #ffffff;
-        justify-content: center;
-        align-items: center;
-    }
-     #ccInfo {
-      display: block;
-      width: 50%;
-      padding: 50px;
-      border-radius: 5px;
-      background-color: #ffffff;
-      margin: auto;
-      font-size: 1.5rem;
-     }
-    }      
+  .lineItems {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    height: 100vh;
+    font-size: 3rem;
+  }
+
+  .creditCard {
+    display: flex;
+    width: 40%;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  #ccInfo {
+    display: block;
+    width: 90%;
+    /* padding: 30px; */
+    border-radius: 2px;
+    background-color: #ffffff;
+    margin: auto;
+    font-size: 1.5rem;
+  }
+  input {
+    width: 100%;
+    /* padding: 5px; */
+    /* border-radius: 5px; */
+    margin: 0.5rem 0;
+  }
+
+  input[type=email] {
+    width: 100%;
+    /* padding: 5px; */
+    border-radius: 5px;
+    margin: 3.5rem, 0;
+  }
+}

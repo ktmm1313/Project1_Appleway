@@ -4,71 +4,67 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Appleway Checkout</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="checkout.css">
-    </head>
-    <body>
-      <!-- Check Out - Katie -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Appleway Checkout</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <!-- Check Out - Katie -->
+    <section class="lineItems">
+      <div>Javascript </div>
+
+      <div>Subtotal, tax, total due</div>
+    </section>
+
     <section class="creditCard">
-        <div id="ccInfo">
-          <label for="Name On Credit Card">Name on Credit Card </label>
-          <input
-            type="name"
-            class="form-control"
-            id="ccName"
-            placeholder="Name on card"
-          />
-  
-          <label for="Credit Card Number">Credit Card Number</label>
-          <input
-            type="number"
-            class="form-control"
-            id="ccName"
-            placeholder="Credit Card number"
-          />
-  
-          <label for="Credit Card Expiration Date"
-            >Credit Card Expiration Date</label
-          >
-          <input
-            type="date"
-            class="form-control"
-            id="ccName"
-            placeholder="Credit Card expiration date"
-          />
-  
-          <label for="Credit Card CVV Number">CVV</label>
-          <input
-            type="number"
-            class="form-control"
-            id="ccName"
-            placeholder="CVV number"
-          />
-  
-          <label for="Mailing List">Do you want to join our mailing list?</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            placeholder="Email address"
-          />
-      </div>
-      </section>
+      <div id="ccInfo">
+        <label for="ccName">Name on Credit Card <br />
+        <input
+          type="text"
+          class="form-control"
+          id="ccName"
+          placeholder="Name on card"
+        /></label>
+
+        <label for="ccNumber">Credit Card Number<br />
+        <input
+          type="number"
+          class="form-control"
+          id="ccNumber"
+          placeholder="Credit Card number"
+        /></label>
+
+        <label for="ccExpDate">Credit Card Expiration Date<br />
+        <input
+          type="date"
+          class="form-control"
+          id="ccExpDate"
+          placeholder="Credit Card expiration date"
+        /></label>
+
+        <label for="ccName">CVV<br />
+        <input
+          type="number"
+          class="form-control"
+          id="ccName"
+          placeholder="CVV number"
+        /></label>
       
-      <section class="lineItems">
-          <div>Javascript    </div>
-  
-  
-          <div>Subtotal, tax, total due</div>
-  
-      </section>
-        
-        <script src="scripts.js" async defer></script>
-    </body>
+        <label for="email">Do you want to join our mailing list?<br />
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="Email address"
+        /></label>
+      </div>
+    </section>
+
+    <script src="scripts.js" async defer></script>
+  </body>
 </html>
