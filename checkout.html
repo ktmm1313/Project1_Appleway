@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!-[endif]-->
 <html>
   <head>
     <meta charset="utf-8" />
@@ -10,62 +10,94 @@
     <title>Appleway Checkout</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="checkout.css" />
   </head>
   <body>
     <!-- Check Out - Katie -->
     <section class="lineItems">
-      <div>Javascript </div>
+      <div>Javascript</div>
 
       <div>Subtotal, tax, total due</div>
     </section>
 
-    <section class="creditCard">
+  <section class="prompts">
+    <input type="radio">Cash</input>
+
+    <input type="radio">Credit Card</input>
+  </section>
+
+    <form class="cash">
+     
+      <div id="cashTendered">
+        <label for="cashTendered"
+          >Cash <br />
+          <input
+            type="number"
+            class="form-control"
+            id="cashTendered"
+            placeholder="Amount tendered"
+        /></label>
+
+    <form class="creditCard">
+    
       <div id="ccInfo">
-        <label for="ccName">Name on Credit Card <br />
-        <input
-          type="text"
-          class="form-control"
-          id="ccName"
-          placeholder="Name on card"
+        <label for="ccFirstName"
+          >First Name on Credit Card <br />
+          <input
+            type="text"
+            class="form-control"
+            id="ccFirstName"
+            placeholder="Name on card"
         /></label>
 
-        <label for="ccNumber">Credit Card Number<br />
-        <input
-          type="number"
-          class="form-control"
-          id="ccNumber"
-          placeholder="Credit Card number"
+        <label for="ccLastName"
+          >Last Name on Credit Card <br />
+          <input
+            type="text"
+            class="form-control"
+            id="ccLastName"
+            placeholder="Name on card"
         /></label>
 
-        <label for="ccExpDate">Credit Card Expiration Date<br />
-        <input
-          type="date"
-          class="form-control"
-          id="ccExpDate"
-          placeholder="Credit Card expiration date"
+        <label for="ccNumber"
+          >Credit Card Number<br />
+          <input
+            type="number"
+            class="form-control"
+            id="ccNumber"
+            placeholder="Credit Card number"
         /></label>
 
-        <label for="ccName">CVV<br />
-        <input
-          type="number"
-          class="form-control"
-          id="ccName"
-          placeholder="CVV number"
+        <label for="ccExpDate"
+          >Credit Card Expiration Date<br />
+          <input
+            type="date"
+            class="form-control"
+            id="ccExpDate"
+            placeholder="Credit Card expiration date"
         /></label>
-      
-        <label for="email">Do you want to join our mailing list?<br />
-        <input
-          type="email"
-          class="form-control"
-          id="email"
-          placeholder="Email address"
+
+        <label for="ccCVV"
+          >CVV<br />
+          <input
+            type="number"
+            class="form-control"
+            id="ccCVV"
+            placeholder="CVV number"
         /></label>
-        <button type="submit" class="btn btn-success">Submit</button>
+
+        <label for="email"
+          >Do you want to join our mailing list?<br />
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Email address"
+        /></label>
+        <button type="submit" class="btn-success">Submit</button>
       </div>
-    </section>
+    </form>
 
-    <script src="scripts.js" async defer></script>
+    <script src="checkout.css" async defer></script>
   </body>
 </html>
