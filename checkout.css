@@ -1,4 +1,4 @@
-html, 
+html,
 body {
   margin: 0;
   padding: 0;
@@ -6,33 +6,42 @@ body {
 }
 body {
   display: flex;
-  /* height: 100vh; */
   flex-flow: row wrap;
 }
 .prompts {
-  display: none;
-  /* display: block; */
+  display: block;
   position: absolute;
   text-align: center;
   flex-direction: column;
   padding: 60px;
   height: 80en;
-  width: 40en;     
-  top: 50%;
-  left: 80%;
-  transform: translate(-50%,-50%);
+  width: 25%;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.cash {
+
+.btn-checkout {
+  display: block;
+  width: 100%;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+#paymentTypeCash {
   display: flex;
   width: 100%;
   height: 25vh;
   justify-content: center;
   align-items: center;
 }
-#cashTendered {
-  display: flex;
+#cash {
+  display: none;
+  /* display: flex; */
   width: 90%;
-  padding: 40px;
+  padding: 25px;
   border-radius: 5px;
   background-color: #ffffff;
   margin: auto;
@@ -49,19 +58,18 @@ body {
   font-size: 2rem;
 }
 
-.creditCard {
-  display: none;
-  /* display: flex; */
+/* #paymentTypeCC {
+  display: flex;
   width: 100%;
   height: 25vh;
   justify-content: center;
   align-items: center;
-}
+} */
 #ccInfo {
   display: none;
   /* display: block; */
   width: 90%;
-  padding: 40px;
+  padding: 10px;
   border-radius: 5px;
   background-color: #ffffff;
   margin: auto;
@@ -79,13 +87,6 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
-  /* html body {
-        background-color: #f9fafc;
-        height: 100vh;
-        font-family: "Open Sans";
-      }
-      body {
-        display: flex; */
   html,
   body {
     margin: 0;
@@ -97,30 +98,29 @@ button {
     height: 100vh;
   }
   .prompts {
-    display: none;
-    /* display: block; */
+    display: block;
     position: absolute;
     text-align: center;
     flex-direction: column;
     padding: 60px;
     height: 80en;
-    width: 40en;     
+    width: 40en;
     top: 50%;
     left: 80%;
-    transform: translate(-50%,-50%);
-}
-.cash {
-  display: flex;
-  width: 40%;
-  background-color: #ffffff;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-  #cashTendered {
-    display: block;
+    transform: translate(-50%, -50%);
+  }
+  #paymentTypeCash {
+    display: flex;
+    width: 40%;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  #cash {
+    display: none;
+    /* display: block; */
     width: 90%;
-    /* padding: 30px; */
     border-radius: 2px;
     background-color: #ffffff;
     margin: auto;
@@ -137,19 +137,17 @@ button {
     font-size: 3rem;
   }
 
-
-  .creditCard {
-    display: none;
-    /* display: flex; */
+  /* #paymentTypeCC {
+    display: flex;
     width: 40%;
     background-color: #ffffff;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
+  } */
   #ccInfo {
     display: none;
-  /* display: block; */
+    /* display: block; */
     width: 90%;
     /* padding: 30px; */
     border-radius: 2px;
@@ -164,7 +162,7 @@ button {
     margin: 0.5rem 0;
   }
 
-  input[type=email] {
+  input[type="email"] {
     width: 100%;
     /* padding: 5px; */
     border-radius: 5px;

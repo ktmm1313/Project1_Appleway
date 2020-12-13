@@ -13,22 +13,23 @@
     <link rel="stylesheet" href="checkout.css" />
   </head>
   <body>
-    <!-- Check Out - Katie -->
     <section class="lineItems">
-      <div>Javascript</div>
+      <div>Will be from javascript</br></div>
 
       <div>Subtotal, tax, total due</div>
     </section>
 
-  <section class="prompts">
-    <input type="radio">Cash</input>
+  <div class="prompts">
 
-    <input type="radio">Credit Card</input>
-  </section>
+    <button type="submit" class="btn-checkout" onclick="location.href = 'index.html' ">Continue Ordering</button>
+  
+    <button type="submit" class="btn-checkout" id="cashButton">Pay with Cash</button>
 
-    <form class="cash">
-     
-      <div id="cashTendered">
+    <button type="submit" class="btn-checkout" id="ccButton">Pay with Credit Card</button>
+  </div>
+
+    <form id="paymentTypeCash">    
+      <div id="cash">
         <label for="cashTendered"
           >Cash <br />
           <input
@@ -37,9 +38,11 @@
             id="cashTendered"
             placeholder="Amount tendered"
         /></label>
+        <button type="submit" class="btn-success" onclick="location.href = 'receipt.html' ">Submit</button>
+      </div>
+    <!-- </form>
 
-    <form class="creditCard">
-    
+    <form id="paymentTypeCC">     -->
       <div id="ccInfo">
         <label for="ccFirstName"
           >First Name on Credit Card <br />
@@ -94,10 +97,10 @@
             id="email"
             placeholder="Email address"
         /></label>
-        <button type="submit" class="btn-success">Submit</button>
+        <button type="submit" class="btn-success" id="ccInfoSubmit" onclick="location.href = 'receipt.html' ">Submit</button>
       </div>
     </form>
 
-    <script src="checkout.css" async defer></script>
+    <script src="checkout.js" async defer></script>
   </body>
 </html>
