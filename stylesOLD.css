@@ -1,0 +1,215 @@
+/* ---------- BEGIN BASIC PAGE ---------- */
+
+/* Add a black background to the page */
+body {
+    background-color: #000;
+    font-family: Futura, Arial, sans-serif;
+}
+
+/* Position the logo */
+#logo {
+    float: left;
+    padding: 20px;
+}
+
+/* Add a black background and red border to the top nav bar */
+.main-nav {
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    /* width: 100%; */
+    background-color: #000;
+    border-bottom: 4px solid red;
+}
+  
+/* Styling for nav links */
+.main-nav ul, .bottom-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for nav links */
+.main-nav a, .bottom-nav a {
+    /* display: flex; */
+    /* flex-direction: row; */
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-size: 1rem;
+    color: #fff;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+    padding: 14px 30px;
+    /* transition: background .25s, box-shadow .15s; */
+}    
+
+/* .left-nav {
+    display: flex;
+    overflow: hidden;
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    border-right: 1px solid red;
+} */
+
+.bottom-nav {
+    display: flex;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid red; 
+}
+
+/* Change the color of nav links when hovering */
+.main-nav a:hover {
+    color: red;
+    background: rgb(46, 44, 44);
+    box-shadow: 0px 4px 0px 0px red;
+}
+
+.bottom-nav a:hover {
+    color: red;
+    background: rgb(46, 44, 44);
+    height: 15px;
+    box-shadow: 0px 1px 0px 0px red;
+}
+
+/* Add an active class to highlight the current page */
+a:active {
+    color: red;
+    background: rgb(46, 44, 44);
+    box-shadow: 0px 4px 0px 0px red;
+}
+
+/* ---------- END BASIC PAGE ---------- */
+
+
+/* ---------- BEGIN SLIDESHOW ---------- */
+
+* {box-sizing: border-box} */
+ /* body {font-family: Verdana, sans-serif; margin:0} */
+.mySlides {display: flex}
+img {vertical-align: middle;}
+
+/* Slideshow styles */
+.slideshow-container {
+    display: flex;
+    max-width: 500px;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Dot indicators for slide images */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* ---------- END SLIDESHOW ---------- */
+
+
+/* ---------- BEGIN MEDIA QUERY ---------- */
+
+/* On smaller screens, move top nav to left */
+@media only screen and (min-width: 768px) {
+    .main-nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        float: left;
+        margin-left: 0;
+     }
+}
+     
+/* ---------- END MEDIA QUERY ---------- */
