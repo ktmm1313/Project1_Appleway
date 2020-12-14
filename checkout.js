@@ -23,6 +23,17 @@ document
 
   document.getElementById("paymentTypeCash").reset();
 
+
+
+  function purchaseClicked() {
+    alert('Thank you for your order')
+    let cartItems = document.getElementsByClassName('cart-items')[0]
+    while (cartItems.hasChildNodes()){
+      cartItems.removeChild(cartItems.firstChild)
+    }
+    updatecartTotal()
+  }
+
 // function showErrorDialogWithMessage(message)
 // {
 //     // For the tutorial, we'll just do an alert. You should customize this function to

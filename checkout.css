@@ -7,6 +7,7 @@ body {
 body {
   display: flex;
   flex-flow: row wrap;
+  font-family: Futura, Arial, sans-serif;
 }
 .prompts {
   display: block;
@@ -28,14 +29,17 @@ body {
   padding: 1rem;
   border-radius: 20px;
   margin-top: 20px;
+  border: 2px solid red;
+  background-color: #000000;
+  color: #ffffff;
 }
-
 #paymentTypeCash {
   display: flex;
   width: 100%;
-  height: 25vh;
+  height: 35vh;
   justify-content: center;
   align-items: center;
+  background-color: #000000;
 }
 #cash {
   display: none;
@@ -46,16 +50,56 @@ body {
   background-color: #ffffff;
   margin: auto;
   font-size: 1rem;
+  background-color: rgba(82, 76, 78, 0.877);
+  color: #ffffff;
+}
+.lineItems {
+  /* display: flex; */
+  width: 100%;
+  max-width: 650px;
+  /* height: 65vh; */
+  background-color: #000000;
+  justify-content: space-around;
+  /* align-items: center; */
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.items-header {
+  width: 100%;
+  max-width:: 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid white;
+  margin: 0 auto;
 }
 
-.lineItems {
+.items-title {
+  width: 45%;
+}
+.price {
+  width: 15%;
   display: flex;
-  width: 100%;
-  height: 65vh;
-  background-color: red;
-  justify-content: center;
   align-items: center;
-  font-size: 2rem;
+}
+.quantity {
+  width: 30%;
+  /* border-bottom: 1px solid white; */
+  display: flex;
+  align-items: center;
+}
+.total {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+.item {
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
 }
 
 /* #paymentTypeCC {
@@ -71,19 +115,27 @@ body {
   width: 90%;
   padding: 10px;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: rgba(82, 76, 78, 0.877);
   margin: auto;
   font-size: 1rem;
+  color: #ffffff;
 }
 input {
-  width: 100%;
+  width: 95%;
   padding: 5px;
   border-radius: 5px;
   margin: 0.5rem 0;
+  background-color: #000000;
+  color: #ffffff;
 }
-button {
+.btn-success {
   display: flex;
   justify-content: flex-end;
+  padding: .5rem;
+  border-radius: 20px;
+  border: 2px solid red;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 @media only screen and (min-width: 768px) {
@@ -92,6 +144,7 @@ button {
     margin: 0;
     padding: 0;
     border: none;
+    font-family: Futura, Arial, sans-serif;
   }
   body {
     display: flex;
@@ -116,6 +169,7 @@ button {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #000000;
   }
   #cash {
     display: none;
@@ -125,16 +179,67 @@ button {
     background-color: #ffffff;
     margin: auto;
     font-size: 1.5rem;
+    background-color: rgba(82, 76, 78, 0.877);
+    color: #ffffff;
   }
 
-  .lineItems {
+  /* .lineItems {
     display: flex;
     width: 60%;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: #000000;
     height: 100vh;
     font-size: 3rem;
+    color: #ffffff;
+  } */
+
+  .lineItems {
+    /* display: flex; */
+    width: 60%;
+    max-width: 1050px;
+    /* height: 65vh; */
+    background-color: #000000;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  .items-header {
+    width: 100%;
+    max-width: 1050px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid white;
+    margin: 0 auto;
+  }
+  
+  .items-title {
+    width: 45%;
+  }
+  .price {
+    width: 15%;
+    display: flex;
+    align-items: center;
+  }
+  .quantity {
+    width: 30%;
+    display: flex;
+    align-items: center;
+  }
+  .total {
+    width: 10%;
+    display: flex;
+    align-items: center;
+  }
+  .item {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
   }
 
   /* #paymentTypeCC {
@@ -151,9 +256,10 @@ button {
     width: 90%;
     /* padding: 30px; */
     border-radius: 2px;
-    background-color: #ffffff;
+    background-color: rgba(82, 76, 78, 0.877);
     margin: auto;
     font-size: 1.5rem;
+    color: #ffffff;
   }
   input {
     width: 100%;
@@ -168,8 +274,13 @@ button {
     border-radius: 5px;
     margin: 3.5rem, 0;
   }
-  button {
+  .btn-success {
     display: flex;
     justify-content: flex-end;
+    padding: .5rem;
+    border-radius: 20px;
+    border: 2px solid red;
+    background-color: #000000;
+    color: #ffffff;
   }
 }
