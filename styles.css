@@ -8,6 +8,7 @@ body {
 
 /* Add a black background and red border to the main nav bar */
 .main-nav {
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
