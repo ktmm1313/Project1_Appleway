@@ -1,5 +1,13 @@
 //in the add to cart function, add invoice.push to push item from array
-let invoice = [
+let cart = [
+    {name: 'Object Onion Rings',
+    price: 6.99},
+    {name: 'Scripts Chips & Salsa',
+    price: 5.99},
+    {name: 'camelCase Chili Fries',
+    price: 7.99},
+    {name: 'Boolean Breadsticks',
+    price: 4.99},
     {name: 'Pig Latin Chops',
     price: 12.99},
     {name: 'Kims Chicken Alfredo',
@@ -8,82 +16,125 @@ let invoice = [
     price: 18.99},
     {name: 'Alessias Salmon Supreme',
     price: 16.99},
+    {name: 'BJs BLTA Salad',
+    price: 8.99},
+    {name: 'Blairs Balsamic Glazed Caprese',
+    price: 8.50},
+    {name: 'Tiias Tabbouleh Salad',
+    price: 8.25},
+    {name: 'Detroit GC Deluxe Ceasar Salad',
+    price: 4.99},
+    {name: 'Function(fruitFritters)',
+    price: 4.99},
+    {name: 'Truthy Tiramisu',
+    price: 5.50},
+    {name: 'Joes Smores',
+    price: 3.99},
+    {name: 'Conditional Churros',
+    price: 3.50},
 ]
 
+//Event Listener for Appetizers
+document.getElementById("onionButton").addEventListener('click', function(){
+    cart.push({name: 'Object Onion Rings',
+    price: 6.99});
+    console.log(cart[0]);
+})
+
+document.getElementById("salsaButton").addEventListener('click', function(){
+    cart.push({name:'Script Chips & Salsa',
+    price: 5.99});
+    console.log(cart[1]);
+})
+
+document.getElementById("chiliButton").addEventListener('click', function(){
+    cart.push({name: 'camelCase Chili Fries',
+    price: 18.99});
+    console.log(cart[2]);
+})
+
+document.getElementById("breadButton").addEventListener('click', function(){
+    cart.push({name: 'Boolean Breadsticks',
+    price: 16.99});
+    console.log(cart[3]);
+})
+
+
+//Event Listener for Main Dishes
+
 document.getElementById("chopButton").addEventListener('click', function(){
-    invoice.push({name: 'Pig Latin Chops',
+    cart.push({name: 'Pig Latin Chops',
     price: 12.99});
-    console.log(invoice);
+    console.log(cart[4]);
 })
 
 document.getElementById("chickenButton").addEventListener('click', function(){
-    invoice.push({name: 'Kims Chicken Alfredo',
+    cart.push({name: 'Kims Chicken Alfredo',
     price: 14.99});
-    console.log(invoice);
+    console.log(cart[5]);
 })
 
 document.getElementById("steakButton").addEventListener('click', function(){
-    invoice.push({name: 'Katies Sirloin Steak Dinner',
+    cart.push({name: 'Katies Sirloin Steak Dinner',
     price: 18.99});
-    console.log(invoice);
+    console.log(cart[6]);
 })
 
 document.getElementById("salmonButton").addEventListener('click', function(){
-    invoice.push({name: 'Alessias Salmon Supreme',
+    cart.push({name: 'Alessias Salmon Supreme',
     price: 16.99});
-    console.log(invoice);
+    console.log(cart[7]);
 })
 
-//in the add to cart function, add invoice.push to push item from array
 
+//Event Listener for Salads
 
-//Things I Googled//
-/*loadEventListerners ();
-function loadEventListeners() {
-    //when new food item is added
-    food.addEventListener('click', buyFood);
+document.getElementById("bltaButton").addEventListener('click', function(){
+    cart.push({name: 'BJs BLTA Salad',
+    price: 8.99});
+    console.log(cart[8]);
+})
 
-function buyFood (e) {
-    if(e.target.foodList.contains('add-cart')) {
-        //read the food value
-    const food = e.target.parentElement.parentElement;
-        getFoodInfo(food);
-        }
-    }
-}
+document.getElementById("blairButton").addEventListener('click', function(){
+    cart.push({name: 'Blairs Balsamic Glazed Caprese',
+    price: 8.50});
+    console.log(cart[9]);
+})
 
-function getFoodInfo (food) {
-    //create an object with food data
-    const foodInfo = {
-        image: food.querySelector('img').src,
-        title: food.querySelector('h3').textContent,
-        price: course.querySelector('price').textContent,
-        id: food.querySelector('a').getAttribute('data-id')
-    }
-    addToCart(foodInfo);
-}
+document.getElementById("tiiaButton").addEventListener('click', function(){
+    cart.push({name: 'Tiias Tabbouleh Salad',
+    price: 8.25});
+    console.log(cart[10]);
+})
 
-function addToCart(food) {
-    const row = document.createElement('tr');
+document.getElementById("gcButton").addEventListener('click', function(){
+    cart.push({name: 'Detroit GC Deluxe Ceasar Salad',
+    price: 4.99});
+    console.log(cart[11]);
+})
 
-    row.innerHTML = `
-<tr>
-    <td>
-        <img src="${food.image}" width="100">
-    </td>
-    <td>
-        ${food.title}
-    </td>
-    <td>
-        ${food.price}
-    </td>
-    <td>
-        <a href="#" class="remove" data-id"${food.id}">X</a>
-    </td>
-</tr>
-    `
-    ;
+//Event Listerner for Desserts
+document.getElementById("fritterButton").addEventListener('click', function(){
+    cart.push({name: 'BJs BLTA Salad',
+    price: 8.99});
+    console.log(cart[12]);
+})
 
-    shippingCartContent.appendChild(row);
-}
-*/
+document.getElementById("truthyButton").addEventListener('click', function(){
+    cart.push({name: 'Truthy Tiramisu',
+    price: 5.50});
+    console.log(cart[13]);
+})
+
+document.getElementById("smoreButton").addEventListener('click', function(){
+    cart.push({name: 'Joes Smores',
+    price: 3.99});
+    console.log(cart[14]);
+})
+
+document.getElementById("churroButton").addEventListener('click', function(){
+    cart.push({name: 'Conditional Churros',
+    price: 3.50});
+    console.log(cart[15]);
+});
+
