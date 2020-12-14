@@ -27,5 +27,24 @@ function getFoodInfo (food) {
 function addToCart(food) {
     const row = document.createElement('tr');
 
-    row.innerHTML = ``
+    row.innerHTML = `
+<tr>
+    <td>
+        <img src="${food.image}" width="100">
+    </td>
+    <td>
+        ${food.title}
+    </td>
+    <td>
+        ${food.price}
+    </td>
+    <td>
+        <a href="#" class="remove" data-id"${food.id}">X</a>
+    </td>
+</tr>
+    `
+    ;
+
+    shippingCartContent.appendChild(row);
 }
+*/
