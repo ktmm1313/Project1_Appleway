@@ -11,13 +11,35 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="checkout.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <section class="lineItems">
-      <div>Will be from javascript</br></div>
+    <!-- <header>
+      <ul>
+        <li><a href="appetizers.html">APPETIZERS</a></li>
+        <li><a href="salads.html">SALADS</a></li>
+        <li><a href="maindishes.html">MAIN DISHES</a></li>
+        <li><a href="desserts.html">DESSERTS</a></li>
+        <li class="cart"> <a href="cart.html"><ion-icon name="basket"></ion-icon></li>Cart<span>0</span></ul>
+        </a>
+    </li>
+      </ul>
+    </nav>
 
-      <div>Subtotal, tax, total due</div>
-    </section>
+    </header> -->
+     <div class="lineItems">
+        <div class="items-header">
+          <h5 class="items-title">Item</h5>
+          <h5 class="price">Price</h5>
+          <h5 class="quantity">Quantity</h5>
+          <h5 class="total">Total</h5>
+
+        </div>
+      <div class="items">
+
+      </div>
+
+     </div>
 
   <div class="prompts">
 
@@ -28,7 +50,7 @@
     <button type="submit" class="btn-checkout" id="ccButton">Pay with Credit Card</button>
   </div>
 
-    <form id="paymentTypeCash">    
+    <section id="paymentTypeCash">    
       <div id="cash">
         <label for="cashTendered"
           >Cash <br />
@@ -48,58 +70,58 @@
           >First Name on Credit Card <br />
           <input
             type="text"
-            class="form-control"
+            class="ccForm"
             id="ccFirstName"
-            placeholder="Name on card"
+            placeholder="First Name"
         /></label>
 
         <label for="ccLastName"
           >Last Name on Credit Card <br />
           <input
             type="text"
-            class="form-control"
+            class="ccForm"
             id="ccLastName"
-            placeholder="Name on card"
+            placeholder="Last Name"
         /></label>
 
         <label for="ccNumber"
           >Credit Card Number<br />
           <input
-            type="number"
-            class="form-control"
+            type="text"
+            class="ccForm"
             id="ccNumber"
-            placeholder="Credit Card number"
+            placeholder="1111-2222-3333-4444"
         /></label>
 
         <label for="ccExpDate"
           >Credit Card Expiration Date<br />
           <input
-            type="date"
-            class="form-control"
+            type="text"
+            class="ccForm"
             id="ccExpDate"
-            placeholder="Credit Card expiration date"
+            placeholder="MM/YYYY"
         /></label>
 
         <label for="ccCVV"
           >CVV<br />
           <input
-            type="number"
-            class="form-control"
+            type="text"
+            class="ccForm"
             id="ccCVV"
-            placeholder="CVV number"
+            placeholder="999"
         /></label>
 
         <label for="email"
-          >Do you want to join our mailing list?<br />
+          >Enter email address<br />
           <input
             type="email"
-            class="form-control"
+            class="ccForm"
             id="email"
             placeholder="Email address"
         /></label>
         <button type="submit" class="btn-success" id="ccInfoSubmit" onclick="location.href = 'receipt.html' ">Submit</button>
       </div>
-    </form>
+    </section>
 
     <script src="checkout.js" async defer></script>
   </body>
