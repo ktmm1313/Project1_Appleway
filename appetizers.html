@@ -10,41 +10,54 @@
         <title>Eat Appleway!</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
+    <nav class="main-nav" role="navigation">
+        <div id="logo">
+          <a href="index.html">
+            <img src="images/main-nav/appleway-logo.png" alt="Appleway Bytes + Bar" width="70%" height="10%"/>
+          </a>
+        </div>
+  
+        <ul>
+          <li><a href="appetizers.html">APPETIZERS</a></li>
+          <li><a href="salads.html">SALADS</a></li>
+          <li><a href="maindishes.html">MAIN DISHES</a></li>
+          <li><a href="desserts.html">DESSERTS</a></li>
+        </ul>
+      </nav>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <!-- Appetizer Section - Alessia -->
-    <div id="Menu" class="container">
+    <div>
         <h1 id="heading" class ="heading">Appetizers</h1>
             <div class="row">
             <h3>Object Onion Rings</h3>
                 <img src="Pages/images/Menu/Appetizers/onion rings.jpg" alt="Object Onion Rings">
-                    <p class="description">Beer battered onion rings with "object" sauce!</p>
-                    <p class="price">$6.99</p>
-                    <div class="add-cart"><button type="button">Add to Cart</button></div>
+                    <p id="descirption">Beer battered onion rings with "object" sauce!</p>
+                    <p id="onionPrice" class="price">$6.99</p>
+                    <button id="onionButton" class="add-cart" type="button">Add to Cart</button>
 
             <h3>Script Chips & Salsa</h3>
                 <img src="Pages/images/Menu/Appetizers/chips and salsa.jpg" alt="Script Chips & Salsa">
-                    <p class="description">Fresh pico de gallo, crunchy house chips.</p>
-                    <p class="price">$5.99</p>
-                    <div class="add-cart"><button type="button">Add to Cart</button></div>
+                    <p id="descirption">Fresh pico de gallo, crunchy house chips.</p>
+                    <p id="salsaPrice" class="price">$5.99</p>
+                    <button class="salsaButton" class="add-cart"  type="button">Add to Cart</button>
 
             <h3>camelCase Chili Fries</h3>
                 <img src="Pages/images/Menu/Appetizers/chili fries.jfif" alt="camelCase Chili Fries">
-                    <p class="description">Brisket chili on top of homeMade curlyBracket fries.</p>
-                    <p class="price">$7.99</p>
-                    <div class="add-cart"><button type="button">Add to Cart</button></div>
-
+                    <p id="descirption">Brisket chili on top of homeMade curlyBracket fries.</p>
+                    <p id="chiliPrice" class="price">$7.99</p>
+                    <button id="chiliButton" class="add-cart" type="button">Add to Cart</button>
             <h3>Boolean Breadsticks</h3>
                 <img src="Pages/images/Menu/Appetizers/Breadsticks with sauce.webp" alt="Boolean Breadsticks">
-                    <p class="description">Delicious === true! Served with our falsy saucy sauce.</p>
-                    <p class="price">$4.99</p>
-                    <div class="add-cart"><button type="button">Add to Cart</button></div>
+                    <p id="descirption">Delicious === true! Served with our falsy saucy sauce.</p>
+                    <p id="breadPrice" class="price">$4.99</p>
+                    <button id="breadButton" class="add-cart" type="button">Add to Cart</button>
             </div>
         </div>
-    <script src="addcart.js" async defer></script>
+    <script src="cartTest.js" async defer></script>
 </body>
 </html>

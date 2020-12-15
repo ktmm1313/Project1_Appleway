@@ -10,39 +10,53 @@
         <title>Eat Appleway!</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
+    <nav class="main-nav" role="navigation">
+
+        <div id="logo">
+          <a href="index.html">
+            <img src="images/main-nav/appleway-logo.png" alt="Appleway Bytes + Bar" width="70%" height="10%"/>
+          </a>
+        </div>
+    
+        <ul>
+          <li><a href="appetizers.html">APPETIZERS</a></li>
+          <li><a href="salads.html">SALADS</a></li>
+          <li><a href="maindishes.html">MAIN DISHES</a></li>
+          <li><a href="desserts.html">DESSERTS</a></li>
+        </ul>
+      </nav>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-  <!-- Desserts - Alessia -->
    <div>
     <h1>Desserts</h1>
         <h3>Function(fruitFritters)</h3>
         <img src="Pages/images/Menu/Desserts/fritters.jpeg" alt="Function Fritters">
-        <p id="description">Fresh banana, peaches, apples, or berries, fried in dough and served fresh with powdered sugar.</p>
-        <p id="price">$4.99</p>
-        <button type="button">Add to Cart</button>
+        <p class="descirption">Fresh banana, peaches, apples, or berries, fried in dough and served fresh with powdered sugar.</p>
+        <p id="fritterPrice" class="price">$4.99</p>
+        <button id="fritterButton" class="add-cart" type="button">Add to Cart</button>
 
         <h3>Truthy Tiramisu</h3>
         <img src="Pages/images/Menu/Desserts/tiramisu.jpg" alt="Truthy Tiramisu">
-        <p id="description">All delicious values in this dessert are true.  {} </p>
-        <p id="price">$5.50</p>
-        <button type="button">Add to Cart</button>
+        <p class="description">All delicious values in this dessert are true.  {} </p>
+        <p id="truthyPrice" class="price">$5.50</p>
+        <button id="truthyButton" class="add-cart" type="button">Add to Cart</button>
 
         <h3>Joe's S'mores</h3>
         <img src="Pages/images/Menu/Desserts/smores.jpg" alt="Joe's S'mores">
-        <p id="description">Whether you like you marshmallow lightly toasted, or burnt to a crisp, we will make the right s'more for you! Ask for a peanut butter cup if you are feeling adventurous.</p>
-        <p id="price">$3.99</p>
-        <button type="button">Add to Cart</button>
+        <p class="description">Whether you like you marshmallow lightly toasted, or burnt to a crisp, we will make the right s'more for you! Ask for a peanut butter cup if you are feeling adventurous.</p>
+        <p id="smorePrice" class="price">$3.99</p>
+        <button id="smoreButton" class="add-cart" type="button">Add to Cart</button>
 
         <h3>Conditional Churros</h3>
         <img src="Pages/images/Menu/Desserts/churros.jpg" alt="churros">
-        <p id="description">If you like cinnamon and sugar, then return "order". Else, return "still order" because it's delicious!</p>
-        <p id="price">$3.50</p>
-        <button type="button">Add to Cart</button>
+        <p class="description">If you like cinnamon and sugar, then return "order". Else, return "still order" because it's delicious!</p>
+        <p id="churroPrice" class="price">$3.50</p>
+        <button id="churroButton" class="add-cart"type="button">Add to Cart</button>
     </div>
-<script src="scripts.js" async defer></script>
+<script src="cartTest.js" async defer></script>
 </body>
 </html>
