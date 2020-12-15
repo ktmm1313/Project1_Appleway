@@ -1,78 +1,296 @@
 /* ---------- BEGIN BASIC PAGE ---------- */
 
+/* ---------- BEGIN MOBILE LAYOUT ---------- */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 /* Add a black background to the page */
 body {
     background-color: #000;
-    font-family: Futura, Arial, sans-serif;
+    font-family: Poppins, Arial, sans-serif;
+}
+
+/* Position the logo */
+.logo {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 60%;
+}
+
+.burger {
+    display: block;
+    margin: 18px;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+.cart {
+    display: flex;
+    /* margin: 18px; */
+    cursor: pointer;
+    flex-direction: row;
+}
+
+/* Add a black background and red border to the main nav bar */
+/* .main-nav {
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    background-color: #000;
+    border-bottom: 4px solid red;
+} */
+
+/* Main nav styling */
+/* .main-nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+    align-items: center;
+} */
+
+/* Styling for main nav links */
+.main-nav ul a {
+    display: flex;
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-size: 15px;
+    color: #fff;
+    padding: 5px 20px;
+    /* transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+    -webkit-transition: transform 0.5s ease-in;
+    -moz-transition: transform 0.5s ease-in;
+    -ms-transition: transform 0.5s ease-in;
+    -o-transition: transform 0.5s ease-in; */
+}
+
+/* Styling for main nav links */
+.bottom-nav ul a {
+    display: flex;
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-size: 15px;
+    color: #fff;
+    padding: 5px 20px;
+    /* transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+    -webkit-transition: transform 0.5s ease-in;
+    -moz-transition: transform 0.5s ease-in;
+    -ms-transition: transform 0.5s ease-in;
+    -o-transition: transform 0.5s ease-in; */
+}
+
+/* Add a gray background and red border to the bottom nav bar */
+/* .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #333;
+    border-top: 2px solid red;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} */
+
+/* Bottom nav styling */
+/* .bottom-nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 50%;
+    align-items: center;
+} */
+
+/* Styling for nav links */
+.bottom-nav a {
+    display: flex;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 18px;
+    color: #fff;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.main-nav-active{
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
+
+/* Change the color of nav links when hovering in main navbar */
+/* .main-nav ul a:hover {
+    color: red;
+    background: rgb(46, 44, 44);
+    box-shadow: 0px 4px 0px 0px red;
+} */
+
+/* Change the color of nav links when hovering in bottom navbar */
+/* .bottom-nav ul a:hover {
+    color: red;
+    background: rgb(46, 44, 44);
+    height: 30px;
+    box-shadow: 0px 2px 0px 0px red;
+} */
+
+/* Add an active class to highlight the current page in main navbar */
+/* .main-nav ul a:active {
+    color: red;
+    background: rgb(46, 44, 44);
+    height: 30px;
+    box-shadow: 0px 2px 0px 0px red;
+} */
+
+/* Add an active class to highlight the current page in bottom navbar */
+/* .bottom-nav a:active {
+    color: red;
+    background: rgb(46, 44, 44);
+    height: 30px;
+    box-shadow: 0px 2px 0px 0px red;
+} */
+
+.carousel-container {
+    display: none;
+}
+
+/* ---------- END MOBILE LAYOUT ---------- */
+
+
+/* ---------- BEGIN DESKTOP LAYOUT ---------- */
+
+@media only screen and (min-width: 768px) {
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+    
+.mobile-container {
+    display: none;
+}
+
+/* Add a black background to the page */
+body {
+    background-color: #000;
+    font-family: Poppins, Arial, sans-serif;
 }
 
 /* Add a black background and red border to the main nav bar */
 .main-nav {
     display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 15vh;
     background-color: #000;
     border-bottom: 4px solid red;
 }
 
 /* Position the logo */
-#logo {
-    float: left;
+.logo {
+    margin-left: 30px;
+    margin-top: 0px;
+    width: 25%;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 20px;
+    height: 2px;
+    /* left: 0; */
+    background-color: #fff;
+    margin: 5px;
 }
 
 /* Main nav styling */
 .main-nav ul {
-    list-style: none;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
     align-items: center;
+    /* background-color: red; */
 }
 
 /* Styling for main nav links */
-.main-nav a {
-    display: block;
+.main-nav ul a {
+    display: flex;
     text-decoration: none;
+    text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 1rem;
+    font-size: 20px;
     color: #fff;
-    text-align: center;
-    padding: 14px 30px;
+    padding: 14px 20px;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
 }    
 
 /* Add a gray background and red border to the bottom nav bar */
 .bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
     background-color: #333;
     border-top: 2px solid red;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* background-color: red; */
 }
 
 /* Bottom nav styling */
 .bottom-nav ul {
-    list-style: none;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    list-style: none;
+    width: 50%;
     align-items: center;
+    /* background-color: red; */
 }
 
 /* Styling for nav links */
 .bottom-nav a {
-    display: block;
+    display: flex;
     text-decoration: none;
-    letter-spacing: 5px;
-    font-size: 1rem;
+    letter-spacing: 3px;
+    font-size: 18px;
     color: #fff;
-    text-align: center;
     align-items: center;
-    padding: 5px 30px;
-    width: 100%;
+    padding: 5px 20px;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
 }    
 
 /* Change the color of nav links when hovering in main navbar */
@@ -92,27 +310,46 @@ body {
 
 /* Add an active class to highlight the current page in main navbar */
 .main-nav ul a:active {
-    background-color: red;
-    color: white;
+    color: red;
+    background: rgb(46, 44, 44);
+    height: 30px;
+    box-shadow: 0px 2px 0px 0px red;
 }
 
 /* Add an active class to highlight the current page in bottom navbar */
 .bottom-nav a:active {
-    background-color: red;
-    color: white;
+    color: red;
+    background: rgb(46, 44, 44);
+    height: 30px;
+    box-shadow: 0px 2px 0px 0px red;
 }
 
 /* ---------- END BASIC PAGE ---------- */
 
 
-/* ---------- BEGIN SLIDESHOW ---------- */
+/* ---------- BEGIN CAROUSEL ---------- */
 
-* {box-sizing: border-box}
-.mySlides {display: flex;}
-img {vertical-align: middle;}
+.carousel-container {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    border: 2px solid red;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 500px;
+
+}
+
+
+/* .mySlides {display: flex;}
+img {vertical-align: middle;} */
 
 /* Slideshow styles */
-.slideshow-container {
+/* .slideshow-container {
     display: flex;
     top: 200px;
     left: 300px;
@@ -120,10 +357,10 @@ img {vertical-align: middle;}
     height: 50%;
     position: absolute;
     margin: auto;
-}
+} */
 
 /* Next & previous buttons */
-.prev, .next {
+/* .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -136,21 +373,21 @@ img {vertical-align: middle;}
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-}
+} */
 
 /* Position the "next button" to the right */
-.next {
+/* .next {
     right: 0;
     border-radius: 3px 0 0 3px;
-}
+} */
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+/* .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
-}
+} */
 
 /* Caption text */
-.text {
+/* .text {
     color: #fff;
     font-size: 15px;
     padding: 8px 12px;
@@ -158,19 +395,19 @@ img {vertical-align: middle;}
     bottom: 8px;
     width: 50%;
     text-align: center;
-}
+} */
 
 /* Number text (1/4 etc) */
-.numbertext {
+/* .numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-}
+} */
 
 /* Dot indicators for slide images */
-.dot {
+/* .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -179,51 +416,36 @@ img {vertical-align: middle;}
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-}
+} */
 
-.active, .dot:hover {
+/* .active, .dot:hover {
   background-color: #717171;
-}
+} */
 
 /* Fading animation */
-.fade {
+/* .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-}
+} */
 
-@-webkit-keyframes fade {
+/* @-webkit-keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
-}
+} */
 
-@keyframes fade {
+/* @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
-}
+} */
 
-/* ---------- END SLIDESHOW ---------- */
+/* ---------- END CAROUSEL ---------- */
 
-
-/* ---------- BEGIN MEDIA QUERY ---------- */
-
-/* On smaller screens, move top nav to left */
-@media only screen and (min-width: 768px) {
-    .main-nav {
-        width: 100%;
-        height: auto;
-        position: relative;
-        float: left;
-        margin-left: 0;
-     }
-}
-     
-/* ---------- END MEDIA QUERY ---------- */
 
 
 /*start of menu.css page*/
-body {
+/* body {
     background-color: rgba(180, 172, 172, 0.877);
     }
 
@@ -234,7 +456,7 @@ body {
 @font-face {
     font-family: 'Cafe';
     src:url('../louis_george_caf/louis_george_caf') format('ttf');
-}
+} */
 
 h1 {
     display:block;
@@ -269,7 +491,7 @@ h3 {
     padding: 10px;
 }
 
-img {
+.row img {
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -304,7 +526,7 @@ p {
     text-align: center;
     border: 2px solid #000000;
 }
-button {
+.heading button {
     display: flex;
     margin-left: auto;
     margin-right: auto;
