@@ -220,3 +220,110 @@ img {vertical-align: middle;}
 }
      
 /* ---------- END MEDIA QUERY ---------- */
+
+
+/*start of menu.css page*/
+@media only screen and (min-width: 768px) {
+    #menu{
+        display: flex;
+    }
+    h1 {
+    width: 300px;
+    }
+}
+body {
+    background-color: rgba(82, 76, 78, 0.877);
+    }
+
+@font-face {
+    font-family: 'Documenta';
+    src:url('../documenta/Documenta.otf') format('otf');
+}
+@font-face {
+    font-family: 'Cafe';
+    src:url('../louis_george_caf/louis_george_caf') format('ttf');
+}
+
+h1 {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(207, 17, 17);
+    color: white;
+    font-size: 74px;
+    font-weight: 100; 
+    text-align: center;
+    width: 625px;
+    font-family: 'Documenta';
+}
+
+h3 {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-align: center;
+    border: 5px 5px;
+    margin: auto;
+    font-size: 24px;
+    width: 500px;
+    font-family: 'Cafe';
+    padding: 10px;
+}
+
+img {
+    display: flex;
+    overflow: hidden;
+    width:  300px;
+    height: 300px;
+    object-fit: cover;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #000000
+
+}
+
+p {
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    background-color: rgb(226, 93, 88);
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    border: 5px solid #000000;
+}
+.price {
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    background-color: rgb(156, 159, 165);
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #000000;
+}
+button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #242222;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 2px solid #dfd4d4;
+}
