@@ -54,8 +54,8 @@ let item = [
 //cart tracker
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
-        cartNumbers(items[i]);
-        totalCost(items[i]);
+        cartNumbers(item[i]);
+        totalCost(item[i]);
     })
 }
 
@@ -102,10 +102,10 @@ function setItems(items) {
             [item.tag]: item
         }
     }
-}
+
     localStorage.setItem("itemsInCart", JSON.stringify
     (cartItems));
-
+}
 function totalCost(items) {
    // console.log("The products price is", item.price);
     let cartCost = localStorage.getItem('totalCost');
@@ -115,7 +115,7 @@ function totalCost(items) {
 
     if(cartCost != null) {
         localStorage.setItem("totalCost", cartCost + item.price);
-    }else {
+    } else {
         localStorage.setItem("totalCost", item.price);
     }
 }
