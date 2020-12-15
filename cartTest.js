@@ -1,4 +1,4 @@
-let carts = document.querySelectAll('.add-cart');
+let carts = document.querySelectorAll('.add-cart');
 //Array info
 let item = [
     {name: 'Object Onion Rings',
