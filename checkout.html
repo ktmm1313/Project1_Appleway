@@ -26,35 +26,47 @@
     </nav>
 
     </header> -->
-     <div class="lineItems">
+
+    <div class="lineItems">
       <div id="logo">
         <a href="index.html">
-          <img src="images/main-nav/appleway-logo.png" alt="Appleway Bytes + Bar" width="50%" height="5%"/>
+          <img
+            src="images/main-nav/appleway-logo.png"
+            alt="Appleway Bytes + Bar"
+            width="50%"
+            height="5%"
+          />
         </a>
       </div>
-        <div class="items-header">
-          <h5 class="items-title">Item</h5>
-          <h5 class="price">Price</h5>
-          <h5 class="quantity">Quantity</h5>
-          <h5 class="total">Total</h5>
-
-        </div>
-      <div class="items">
-
+      <div class="items-header">
+        <h5 class="items-title">Item</h5>
+        <h5 class="price">Price</h5>
+        <h5 class="quantity">Quantity</h5>
+        <h5 class="total">Total</h5>
       </div>
+      <div class="items"></div>
+    </div>
 
-     </div>
 
-  <div class="prompts">
+    <div class="prompts">
+      <button
+        type="submit"
+        class="btn-checkout"
+        onclick="location.href = 'index.html' "
+      >
+        Continue Ordering
+      </button>
 
-    <button type="submit" class="btn-checkout" onclick="location.href = 'index.html' ">Continue Ordering</button>
-  
-    <button type="submit" class="btn-checkout" id="cashButton">Pay with Cash</button>
+      <button type="submit" class="btn-checkout" id="cashButton">
+        Pay with Cash
+      </button>
 
-    <button type="submit" class="btn-checkout" id="ccButton">Pay with Credit Card</button>
-  </div>
+      <button type="submit" class="btn-checkout" id="ccButton">
+        Pay with Credit Card
+      </button>
+    </div>
 
-    <section id="paymentTypeCash">    
+    <section id="paymentTypeCash">
       <div id="cash">
         <label for="cashTendered"
           >Cash <br />
@@ -64,9 +76,15 @@
             id="cashTendered"
             placeholder="Amount tendered"
         /></label>
-        <button type="submit" class="btn-success" onclick="location.href = 'receipt.html' ">Submit</button>
+        <button
+          type="submit"
+          class="btn-success"
+          onclick="location.href = 'receipt.html' "
+        >
+          Submit
+        </button>
       </div>
-    <!-- </form>
+      <!-- </form>
 
     <form id="paymentTypeCC">     -->
       <div id="ccInfo">
@@ -108,11 +126,7 @@
 
         <label for="ccCVV"
           >CVV<br />
-          <input
-            type="text"
-            class="ccForm"
-            id="ccCVV"
-            placeholder="999"
+          <input type="text" class="ccForm" id="ccCVV" placeholder="999"
         /></label>
 
         <label for="email"
@@ -123,7 +137,14 @@
             id="email"
             placeholder="Email address"
         /></label>
-        <button type="submit" class="btn-success" id="ccInfoSubmit" onclick="location.href = 'receipt.html' ">Submit</button>
+        <button
+          type="submit"
+          class="btn-success"
+          id="ccInfoSubmit"
+          onclick="location.href = 'receipt.html' "
+        >
+          Submit
+        </button>
       </div>
     </section>
 

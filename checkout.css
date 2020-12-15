@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   font-family: Futura, Arial, sans-serif;
+  background-color: #000000;
 }
 #logo {
   margin-left: 10px;
@@ -40,7 +41,7 @@ body {
 #paymentTypeCash {
   display: flex;
   width: 100%;
-  height: 35vh;
+  height: 45vh;
   justify-content: center;
   align-items: center;
   background-color: #000000;
@@ -61,12 +62,12 @@ body {
   /* display: flex; */
   width: 100%;
   max-width: 650px;
-  /* height: 65vh; */
+  height: 64vh;
   background-color: #000000;
   justify-content: space-around;
   /* align-items: center; */
   margin: 0 auto;
-  margin-top: 30px;
+  /* margin-top: 10px; */
   font-size: 1rem;
   color: #ffffff;
 }
@@ -117,6 +118,7 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 10px 0;
+  color: white;
 }
 #ccInfo {
   display: none;
@@ -211,6 +213,7 @@ input {
     margin: 0 auto;
     margin-top: 30px;
     font-size: 2rem;
+    height: 100vh;
     color: #ffffff;
   }
   .items-header {
@@ -259,6 +262,7 @@ input {
     justify-content: space-around;
     align-items: center;
     padding: 10px 0;
+    color: white;
   }
 
   #ccInfo {
