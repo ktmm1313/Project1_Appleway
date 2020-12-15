@@ -1,4 +1,4 @@
-let carts = document.querySelectAll('.add-cart');
+let carts = document.querySelectorAll(".add-cart");
 //Array info
 let item = [
     {name: 'Object Onion Rings',
@@ -54,8 +54,8 @@ let item = [
 //cart tracker
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
-        cartNumbers(items[i]);
-        totalCost(items[i]);
+        cartNumbers(item[i]);
+        totalCost(item[i]);
     })
 }
 
@@ -80,10 +80,10 @@ if(itemNumbers) {
     document.querySelector('.cart span').textContent = 1;
 }
 
-setItems(product);
+setItems(item);
 }
 
-function setItems(items) {
+function setItems(item) {
     let cartItems = localStorage.getItem('itemsInCart');
     cartItems = JSON.parse(cartItems);
     
@@ -102,10 +102,10 @@ function setItems(items) {
             [item.tag]: item
         }
     }
-}
+
     localStorage.setItem("itemsInCart", JSON.stringify
     (cartItems));
-
+}
 function totalCost(items) {
    // console.log("The products price is", item.price);
     let cartCost = localStorage.getItem('totalCost');

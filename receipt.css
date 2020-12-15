@@ -17,9 +17,9 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  height: 10vh;
-  width: 40rem;
+  margin-top: 10px;
+  height: 20vh;
+  width: 100%;
 } 
 
 .lineItems {
@@ -93,20 +93,20 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    height: 10vh;
+    margin-top: 10px;
+    height: 15vh;
     width: 100%;
 } 
 .lineItems {
   /* display: flex; */
-  width: 90%;
+  width: 100%;
   max-width: 750px;
-  height: 90vh;
+  height: 85vh;
   background-color: #ffffff;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
-  font-size: 2rem;
+  font-size: 1rem;
   color: #000000;
 }
 .items-header {
