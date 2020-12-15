@@ -12,27 +12,58 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
     </head>
-    <nav class="main-nav" role="navigation">
 
-        <div id="logo">
-          <a href="index.html">
-            <img src="images/main-nav/appleway-logo.png" alt="Appleway Bytes + Bar" width="70%" height="10%"/>
-          </a>
-        </div>
-    
-        <ul>
-          <li><a href="appetizers.html">APPETIZERS</a></li>
-          <li><a href="salads.html">SALADS</a></li>
-          <li><a href="maindishes.html">MAIN DISHES</a></li>
-          <li><a href="desserts.html">DESSERTS</a></li>
-        </ul>
-      </nav>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+
+        <!-- BEGIN BASIC PAGE - KIM -->
+
+        <nav class="main-nav" role="navigation">
+
+          <div class="logo">
+              <a href="index.html">
+                  <img src="images/main-nav/appleway-logo.png" alt="Appleway Bytes + Bar" width="70%"" height="10%"/>
+              </a>
+          </div>
+
+          <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+          </div>
+
+          <ul>
+              <li><a href="appetizers.html">Appetizers</a></li>
+              <li><a href="salads.html">Salads</a></li>
+              <li><a href="maindishes.html">Main Dishes</a></li>
+              <li><a href="desserts.html">Desserts</a></li>
+              <li class = "cart">
+                  <a href="checkout.html">
+                      <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                  </a>
+              </li>
+          </ul>
+
+      </nav>
+
+      <nav class="bottom-nav">
+          <ul>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About Us</a></li>
+          </ul>   
+      </nav>
+          
+      <!-- END BASIC PAGE - KIM -->
+
+
+   <!-- Salads - Alessia -->
    <div>
-    <h1>Desserts</h1>
+      <h1>Desserts</h1>
+      <div class = "row">
         <h3>Function(fruitFritters)</h3>
         <img src="Pages/images/Menu/Desserts/fritters.jpeg" alt="Function Fritters">
         <p class="descirption">Fresh banana, peaches, apples, or berries, fried in dough and served fresh with powdered sugar.</p>
@@ -56,6 +87,7 @@
         <p class="description">If you like cinnamon and sugar, then return "order". Else, return "still order" because it's delicious!</p>
         <p id="churroPrice" class="price">$3.50</p>
         <button id="churroButton" class="add-cart"type="button">Add to Cart</button>
+      </div>
     </div>
 <script src="cartTest.js" async defer></script>
 </body>

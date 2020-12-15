@@ -445,7 +445,7 @@ img {vertical-align: middle;} */
 
 
 /*start of menu.css page*/
-body {
+/* body {
     background-color: rgba(180, 172, 172, 0.877);
     }
 
@@ -456,7 +456,7 @@ body {
 @font-face {
     font-family: 'Cafe';
     src:url('../louis_george_caf/louis_george_caf') format('ttf');
-}
+} */
 
 h1 {
     display:block;
@@ -491,7 +491,7 @@ h3 {
     padding: 10px;
 }
 
-img {
+.row img {
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -526,7 +526,7 @@ p {
     text-align: center;
     border: 2px solid #000000;
 }
-button {
+.heading button {
     display: flex;
     margin-left: auto;
     margin-right: auto;
