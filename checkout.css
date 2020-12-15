@@ -9,6 +9,11 @@ body {
   flex-flow: row wrap;
   font-family: Futura, Arial, sans-serif;
 }
+#logo {
+  margin-left: 10px;
+  float: left;
+
+}
 .prompts {
   display: block;
   position: absolute;
@@ -17,7 +22,7 @@ body {
   padding: 60px;
   height: 80en;
   width: 25%;
-  top: 80%;
+  top: 90%;
   left: 40%;
   transform: translate(-50%, -50%);
 }
@@ -62,12 +67,12 @@ body {
   justify-content: space-around;
   /* align-items: center; */
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 1rem;
   color: #ffffff;
 }
 .items-header {
-  width: 100%;
+  width: 95%;
   max-width: 650px;
   display: flex;
   justify-content: flex-start;
@@ -194,17 +199,6 @@ input {
     color: #ffffff;
   }
 
-  /* .lineItems {
-    display: flex;
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000;
-    height: 100vh;
-    font-size: 3rem;
-    color: #ffffff;
-  } */
-
   .lineItems {
     /* display: flex; */
     width: 60%;
@@ -214,12 +208,12 @@ input {
     justify-content: space-around;
     /* align-items: center; */
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 2rem;
     color: #ffffff;
   }
   .items-header {
-    width: 100%;
+    width: 95%;
     max-width: 1050px;
     display: flex;
     justify-content: flex-start;
