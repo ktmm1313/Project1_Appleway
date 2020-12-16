@@ -21,18 +21,18 @@ document
     buttons.style.display = "none";
   });
 
-  document.getElementById("paymentTypeCash").reset();
+  // document.getElementById("paymentTypeCash").reset();
 
 
 
-  function purchaseClicked() {
-    alert('Thank you for your order')
-    let cartItems = document.getElementsByClassName('cart-items')[0]
-    while (cartItems.hasChildNodes()){
-      cartItems.removeChild(cartItems.firstChild)
-    }
-    updatecartTotal()
-  }
+  // function purchaseClicked() {
+  //   alert('Thank you for your order')
+  //   let cartItems = document.getElementsByClassName('cart-items')[0]
+  //   while (cartItems.hasChildNodes()){
+  //     cartItems.removeChild(cartItems.firstChild)
+  //   }
+  //   updatecartTotal()
+  // }
 
 // function showErrorDialogWithMessage(message)
 // {
