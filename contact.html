@@ -10,41 +10,61 @@
         <title>Appleway Contact Us</title>
         <meta name="description" content="Submit form to contact us at Appleway">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="bottomlinks.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <!-- <header> -->
+        <!-- BEGIN BASIC PAGE -->
 
-            <nav class="main-nav" role="navigation">
+        <nav class="main-nav" role="navigation">
 
-                <div>
-                    <a href="index.html">
-                        <img src="images/main-nav/appleway-logo.png" id="logo" alt="Appleway Bytes + Bar" width="15%"" height="10%"/>
-                    </a>
-                </div>
-      
-                <ul>
-                    <li><a href="pages/appetizers.html">APPETIZERS</a></li>
-                    <li><a href="pages/salads.html">SALADS</a></li>
-                    <li><a href="pages/maindishes.html">MAIN DISHES</a></li>
-                    <li><a href="pages/desserts.html">DESSERTS</a></li>
-                </ul>
-            </nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/main-nav/appleway-logo.png" alt="Appleway Bytes + Bar" width="70%"" height="10%"/>
+                </a>
+            </div>
     
-        <!-- </header> -->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+    
+            <ul>
+                <li class="main-nav-links"><a href="appetizers.html">Appetizers</a></li>
+                <li class="main-nav-links"><a href="salads.html">Salads</a></li>
+                <li class="main-nav-links"><a href="maindishes.html">Main Dishes</a></li>
+                <li class="main-nav-links"><a href="desserts.html">Desserts</a></li>
+                <li class="cart">
+                    <a href="checkout.html">
+                        <i class="fas fa-cash-register"></i><span>0</span>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <nav class="bottom-nav">
+            <ul>
+                <li class="main-nav-links"><a href="locations.html">Locations</a></li>
+                <li class="main-nav-links"><a href="contact.html">Contact Us</a></li>
+                <li class="main-nav-links"><a href="about.html">About Us</a></li>
+            </ul>   
+        </nav>
+            
+        <!-- END BASIC PAGE -->
 
         <main>
 
+            <h1 class="contact-us">Contact Us</h1>
+                
             <div class="form-container">
             
                 <form action="http://www.google.com" method="GET">
 
-                    <h1>Contact Us</h1>
-                
                     <p><label> First Name <p><input type="text" name="firstname" placeholder="First Name"></p></label></p>
 
                     <p><label> Last Name <p><input type="text" name="lastname" placeholder="Last Name"></p></label></p>
@@ -61,14 +81,8 @@
 
         </main>
         
-        <nav class="bottom-nav">
-            <ul>
-              <li><a href="locations.html">Locations</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="about.html">About Us</a></li>
-            </ul>
-        </nav>
             
         <script src="" async defer></script>
+        <script src="https://kit.fontawesome.com/9d32d103c9.js" crossorigin="anonymous"></script>
     </body>
 </html>

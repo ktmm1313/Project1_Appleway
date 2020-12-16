@@ -8,7 +8,6 @@
     box-sizing: border-box;
 }
 
-
 /* Hide image carousel and prev/next buttons */
 .carousel {
     display: none;
@@ -44,9 +43,7 @@ body {
 
 .cart {
     display: flex;
-    /* margin: 18px; */
     cursor: pointer;
-    /* flex-direction: row; */
 }
 
 /* Styling for main nav links */
@@ -189,10 +186,14 @@ body {
 }    
 
 /* Change the color of nav links when hovering in main navbar */
-.main-nav ul a:hover {
+.main-nav-links a:hover {
     color: red;
     background: rgb(46, 44, 44);
     box-shadow: 0px 4px 0px 0px red;
+}
+
+.cart a:hover {
+    font-size: 25px;
 }
 
 /* Change the color of nav links when hovering in bottom navbar */
@@ -349,14 +350,14 @@ h1 {
     margin-right: auto;
     background-color: rgb(207, 17, 17);
     color: white;
-    font-size: 74px;
+    font-size: 50px;
     font-weight: 100; 
     text-align: center;
     width: 625px;
-    font-family: 'Documenta';
+    font-family: 'Futura';
 }
 
-h3 {
+.row h3 {
     display:block;
     margin-left: auto;
     margin-right: auto;
@@ -390,7 +391,7 @@ h3 {
 
 }
 
-p {
+.row p {
     display:flex;
     margin-left: auto;
     margin-right: auto;
@@ -426,3 +427,156 @@ p {
     margin-bottom: 10px;
     border: 2px solid #dfd4d4;
 }
+
+/* ---------- BEGIN LOCATIONS PAGE ---------- */
+
+.about-us {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(207, 17, 17);
+    color: white;
+    font-size: 50px;
+    font-weight: 100; 
+    text-align: center;
+    width: 625px;
+    font-family: 'Futura';
+}
+
+section {
+    display: block;
+    float: center;
+}
+
+.location1 {
+    color: white;
+    position: absolute;
+    top: 200px;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+.location2 {
+    color: white;
+    position: relative;
+    top: 200px;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+.location3 {
+    color: white;
+    position: absolute;
+    top: 200px;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+/* ---------- END LOCATIONS PAGE ---------- */
+
+
+/* ---------- BEGIN CONTACT FORM PAGE ---------- */
+
+.contact-us {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(207, 17, 17);
+    color: white;
+    font-size: 50px;
+    font-weight: 100; 
+    text-align: center;
+    width: 625px;
+    font-family: 'Futura';
+}
+
+.form-container {
+    display: flex;
+    height: 100vh;
+    padding: 30px;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    height: 300px;
+    width: 600px;
+    /* margin-top: 20px; */
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+input {
+    border: 2px solid black;
+    width: 50%;
+    padding: 5px;
+}
+
+.form-container button {
+    width: 160px;
+    padding: 5px;
+    margin: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 25px;
+    width: 20%;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+a {
+    color: #ccc;
+    text-decoration: none;
+    /* text-align: center; */
+}
+
+/* ---------- END CONTACT US PAGE ---------- */
+
+
+/* ---------- BEGIN ABOUT US PAGE ---------- */
+
+.about-us {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(207, 17, 17);
+    color: white;
+    font-size: 50px;
+    font-weight: 100; 
+    text-align: center;
+    width: 625px;
+    font-family: 'Futura';
+}
+
+.about-container {
+    color: white;
+    position: absolute;
+    top: 200px;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+.meet-us {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 50%; */
+    color: white;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+/* ---------- END ABOUT US PAGE ---------- */
+

@@ -10,7 +10,7 @@
         <title>Appleway Locations</title>
         <meta name="description" content="Where to find Appleway locations">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="bottomlinks.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -18,59 +18,71 @@
         <![endif]-->
         
 
-    <!-- <header> -->
+        <!-- BEGIN BASIC PAGE -->
 
-      <nav class="main-nav" role="navigation">
+        <nav class="main-nav" role="navigation">
 
-        <div>
-          <a href="index.html">
-            <img src="images/main-nav/appleway-logo.png" id="logo" alt="Appleway Bytes + Bar" width="15%"" height="10%"/>
-          </a>
-        </div>
-  
-        <ul>
-          <li><a href="pages/appetizers.html">APPETIZERS</a></li>
-          <li><a href="pages/salads.html">SALADS</a></li>
-          <li><a href="pages/maindishes.html">MAIN DISHES</a></li>
-          <li><a href="pages/desserts.html">DESSERTS</a></li>
-        </ul>
-      </nav>
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/main-nav/appleway-logo.png" alt="Appleway Bytes + Bar" width="70%"" height="10%"/>
+            </a>
+          </div>
 
-    <!-- </header> -->
-    
-    <main>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
 
-      <h1>Locations</h1>
+          <ul>
+            <li class="main-nav-links"><a href="appetizers.html">Appetizers</a></li>
+            <li class="main-nav-links"><a href="salads.html">Salads</a></li>
+            <li class="main-nav-links"><a href="maindishes.html">Main Dishes</a></li>
+            <li class="main-nav-links"><a href="desserts.html">Desserts</a></li>
+            <li class="cart">
+              <a href="checkout.html">
+                  <i class="fas fa-cash-register"></i><span>0</span>
+              </a>
+            </li>
+          </ul>
 
-      <section class="location1">
-         <h2>Michigan</h2>
-         <p>123 HTML St.</p>
-         <p>Detroit, MI 48226</p>
-      </section> 
+        </nav>
 
-      <section class="location2">
-        <h2>Florida</h2>
-        <p>456 CSS Ave.</p>
-        <p>Miami, FL 33155</p>
-      </section> 
+        <nav class="bottom-nav">
+          <ul>
+            <li class="main-nav-links"><a href="locations.html">Locations</a></li>
+            <li class="main-nav-links"><a href="contact.html">Contact Us</a></li>
+            <li class="main-nav-links"><a href="about.html">About Us</a></li>
+          </ul>   
+        </nav>
+          
+      <!-- END BASIC PAGE -->
 
-      <section class="location3">
-        <h2>California</h2>
-        <p>789 Javascript Dr.</p>
-        <p>Los Angeles, CA 90001</p>
-      </section> 
+      <main>
 
-    </main>
+        <h1>Locations</h1>
 
+        <section class="locations">
+          <h2>Michigan</h2>
+          <p>123 HTML St.</p>
+          <p>Detroit, MI 48226</p>
+        </section> 
 
-    <nav class="bottom-nav">
-      <ul>
-        <li><a href="locations.html">Locations</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="about.html">About Us</a></li>
-      </ul>
-    </nav>
+        <section class="locations">
+          <h2>Florida</h2>
+          <p>456 CSS Ave.</p>
+          <p>Miami, FL 33155</p>
+        </section> 
+
+        <section class="locations">
+          <h2>California</h2>
+          <p>789 Javascript Dr.</p>
+          <p>Los Angeles, CA 90001</p>
+        </section> 
+
+      </main>
 
       <script src="scripts.js" async defer></script>
+      <script src="https://kit.fontawesome.com/9d32d103c9.js" crossorigin="anonymous"></script>
     </body>
 </html>
