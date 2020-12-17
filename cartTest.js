@@ -87,44 +87,45 @@ function displayCart() {
   cartItems = JSON.parse(cartItems);
   let lineItems = document.querySelector(".items");
   let cartCost = localStorage.getItem("totalCost");
+  let subtotal = document.querySelector(".subtotal");
 
   if (cartItems && lineItems) {
     lineItems.innerHTML = '';
     Object.values(cartItems).map(itemList => {
-      lineItems.innerHTML += `
+      lineItems.innerHTML += `<div class = "item-container">
       <div class = "item">${itemList.name}</div>
       <div class = "price">$${itemList.price}.00</div>
       <div class = "quantity">${itemList.inCart} </div>
       <div class = "total">$${itemList.inCart * itemList.price}.00 </div> 
-      `;
+     </div> `;
     })
-    lineItems.innerHTML += `
-    <div class = "cartSubTotalContainer">
-       <h4 class = "cartSubTotalTitle">
-       Order SubTotal
-       </h4>
-       <h4 class = "cartSubTotal">
-       $${cartCost}.00
-       </h4>
-    `;
-    lineItems.innerHTML += `
-    <div class = "cartTaxContainer">
-       <h4 class = "cartTaxTitle">
-       Tax
-       </h4>
-       <h4 class = "cartTaxTotal">
-       $${cartCost * .06}
-       </h4>
-    `;
-    lineItems.innerHTML += `
-    <div class = "cartTotalContainer">
-       <h4 class = "cartTotalTitle">
-       Order Total
-       </h4>
-       <h4 class = "cartTotal">
-       $${orderTotal}
-       </h4>
-    `;
+    // subtotal.innerHTML += `
+    // <div class = "cartSubTotalContainer">
+    //    <h4 class = "cartSubTotalTitle">
+    //    Order SubTotal
+    //    </h4>
+    //    <h4 class = "cartSubTotal">
+    //    $${cartCost}.00
+    //    </h4>
+    // `;
+    // subtotal.innerHTML += `
+    // <div class = "cartTaxContainer">
+    //    <h4 class = "cartTaxTitle">
+    //    Tax
+    //    </h4>
+    //    <h4 class = "cartTaxTotal">
+    //    $${cartCost * .06}
+    //    </h4>
+    // `;
+    // subtotal.innerHTML += `
+    // <div class = "cartTotalContainer">
+    //    <h4 class = "cartTotalTitle">
+    //    Order Total
+    //    </h4>
+    //    <h4 class = "cartTotal">
+    //    $${orderTotal}
+    //    </h4>
+    // `;
 
   }
 }

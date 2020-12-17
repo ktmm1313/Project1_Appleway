@@ -92,12 +92,15 @@ header {
 }
 
 .items {
-  display: flex;
+  /* display: flex;
   flex-direction: row wrap;
   max-width: 650px;
   width: 100%;
   /* justify-content: space-around; */
-  margin: 0 auto;
+ /* margin: 0 auto;
+  font: 2rem;
+  box-sizing: border-box; */
+  width: 100%;
   font: 2rem;
   box-sizing: border-box;
 }
@@ -205,10 +208,14 @@ header {
 }
 
 .items {
-  width: 100%;
+  /* width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 10px 0;
+  box-sizing: border-box; */
+  width: 100%;
+  font: 2rem;
   box-sizing: border-box;
+}
 }
