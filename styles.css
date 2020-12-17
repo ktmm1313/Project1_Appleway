@@ -359,7 +359,7 @@ body {
         font-family: 'Futura';
     }
 
-<<<<<<< HEAD
+
     .row h3 {
         display:block;
         margin-left: auto;
@@ -393,7 +393,7 @@ body {
         border: 5px solid #000000
 
     }
-=======
+
 @font-face {
     font-family: 'Documenta';
     src:url('../documenta/Documenta.otf') format('otf');
@@ -443,7 +443,7 @@ button {
     margin-bottom: 10px;
     margin-top: 10px;
     color: white;
-    background-color: rgb(88, 80, 80);
+    background-color: rgb(85, 82, 82);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -528,7 +528,7 @@ button {
 }
 
 /* ---------- BEGIN LOCATIONS PAGE ---------- */
->>>>>>> main
+
 
     .row p {
         display:flex;
@@ -599,12 +599,153 @@ button {
     .location2 {
         color: white;
         position: relative;
+    }
+.bottomButton {
+    margin-bottom: 200px;
+}
+
+/* ---------- BEGIN LOCATIONS PAGE ---------- */
+
+    .row p {
+        display:flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        background-color: rgb(226, 93, 88);
+        font-size: 24px;
+        color: black;
+        text-align: center;
+        border: 5px solid #000000;
+    }
+    .price {
+        display:flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+        background-color: rgb(156, 159, 165);
+        font-size: 20px;
+        text-align: center;
+        border: 2px solid #000000;
+    }
+    .heading button {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #242222;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        border: 2px solid #dfd4d4;
+    }
+
+    /* ---------- BEGIN LOCATIONS PAGE ---------- */
+
+    .about-us {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(207, 17, 17);
+        color: white;
+        font-size: 50px;
+        font-weight: 100; 
+        text-align: center;
+        width: 625px;
+        font-family: 'Futura';
+    }
+
+    section {
+        display: block;
+        float: center;
+    }
+
+    .location1 {
+        color: white;
+        position: absolute;
         top: 200px;
         width: 75%;
         margin: auto;
         text-align: center;
     }
 
+    .location3 {
+        color: white;
+        position: absolute;
+    }
+    .location2 {
+        color: white;
+        position: relative;
+        top: 200px;
+        width: 75%;
+        margin: auto;
+        text-align: center;
+    }
+
+    /* ---------- END LOCATIONS PAGE ---------- */
+
+
+    /* ---------- BEGIN CONTACT FORM PAGE ---------- */
+
+    .contact-us {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(207, 17, 17);
+        color: white;
+        font-size: 50px;
+        font-weight: 100; 
+        text-align: center;
+        width: 625px;
+        font-family: 'Futura';
+    }
+
+    .form-container {
+        display: flex;
+        height: 100vh;
+        bottom: 300px;
+        /* padding: 30px; */
+        background-color: #000;
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+    form {
+        height: 400px;
+        width: 625px;
+        padding: 30px;
+        background-color: white;
+        /* border-radius: 15px; */
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .form-container input {
+        border: none;
+        border-bottom: 2px solid black;
+        width: 60%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .form-container label {
+        width: 50%;
+        padding: 10px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    #message-box {
+        width: 560px;
+        height: 75px;
+        border: 2px solid black;
+    }
     .location3 {
         color: white;
         position: absolute;
@@ -668,7 +809,52 @@ button {
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
+
     }
+
+    .form-container button {
+        width: 20%;
+        height: 50px;
+        padding: 5px;
+        /* margin-left: 40%; */
+        /* margin-right: 40%; */
+        margin: 0% 40%;
+        background-color: #333;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 2px;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+    }
+
+    a {
+        color: #ccc;
+        text-decoration: none;
+        /* text-align: center; */
+    }
+
+    /* ---------- END CONTACT US PAGE ---------- */
+
+
+    /* ---------- BEGIN ABOUT US PAGE ---------- */
+
+    .about-us {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(207, 17, 17);
+        color: white;
+        font-size: 50px;
+        font-weight: 100; 
+        text-align: center;
+        width: 625px;
+        font-family: 'Futura';
+    }
+
 
     #message-box {
         width: 560px;
@@ -764,5 +950,4 @@ button {
         -o-transform: translate(-50%, -50%);
 
     }
-
 /* ---------- END ABOUT US PAGE ---------- */

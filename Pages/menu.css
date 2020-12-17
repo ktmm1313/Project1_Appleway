@@ -19,10 +19,12 @@ body {
     src:url('../louis_george_caf/louis_george_caf') format('ttf');
 }
 
-h1 {
+
+h2 {
     display:block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
     background-color: rgb(207, 17, 17);
     color: white;
     font-size: 74px;
@@ -30,15 +32,35 @@ h1 {
     text-align: center;
     width: 625px;
     font-family: 'Documenta';
+
 }
 
-h3 {
+button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: #242222;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 2px solid #dfd4d4;
+}
+
+.row h3 {
     display:block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
+    margin-top: 10px;
     color: white;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(85, 82, 82);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -53,8 +75,9 @@ h3 {
     padding: 10px;
 }
 
-img {
-    display: flex;
+.row img {
+    display: block;
+    flex-direction: row;
     overflow: hidden;
     width:  300px;
     height: 300px;
@@ -81,13 +104,35 @@ p {
     display:flex;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 100px;
     background-color: rgb(156, 159, 165);
     font-size: 20px;
     text-align: center;
     border: 2px solid #000000;
 }
+<<<<<<< HEAD:menu.css
 .add-cart {
+=======
+.heading button {
+>>>>>>> cfdca3fe6b11a309265797a0028a07bd60d7c1cd:Pages/menu.css
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #242222;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 2px solid #dfd4d4;
+}
+
+button {
     display: flex;
     margin-left: auto;
     margin-right: auto;

@@ -81,7 +81,7 @@ body {
   font: 2rem;
   color: #ffffff;
 }
-.items-header {
+.items-header, .items>div.item-container {
   width: 100%;
   max-width: 650px;
   display: flex;
@@ -370,4 +370,4 @@ input {
     background-color: #000000;
     color: #ffffff;
   }
-}
+

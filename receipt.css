@@ -40,7 +40,7 @@ header {
   height: 90vh;
   box-sizing: border-box;
 }
-.items-header {
+.items-header, .items>div.item-container {
   width: 100%;
   max-width: 650px;
   display: flex;
@@ -164,7 +164,7 @@ header {
   color: #000000;
   box-sizing: border-box;
 }
-.items-header {
+.items-header, .items>div.item-container {
   width: 95%;
   max-width: 1050px;
   display: flex;
