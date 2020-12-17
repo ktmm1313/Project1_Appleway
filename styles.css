@@ -386,7 +386,7 @@ button {
     margin-bottom: 10px;
     margin-top: 10px;
     color: white;
-    background-color: rgb(88, 80, 80);
+    background-color: rgb(85, 82, 82);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -416,7 +416,7 @@ button {
 }
 
 p {
-    display:block;
+    display:flex;
     margin-left: auto;
     margin-right: auto;
     width: 400px;
@@ -452,7 +452,7 @@ p {
     cursor: pointer;
     margin-bottom: 10px;
     border: 2px solid #dfd4d4;
-}
+}q
 
 button {
     display: flex;
@@ -468,6 +468,10 @@ button {
     cursor: pointer;
     margin-bottom: 10px;
     border: 2px solid #dfd4d4;
+}
+
+.bottomButton {
+    margin-bottom: 200px;
 }
 
 /* ---------- BEGIN LOCATIONS PAGE ---------- */
