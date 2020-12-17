@@ -350,6 +350,7 @@ h1 {
     display:block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
     background-color: rgb(207, 17, 17);
     color: white;
     font-size: 74px;
@@ -358,14 +359,14 @@ h1 {
     width: 625px;
     font-family: 'Documenta';
 }
-
 .row h3 {
     display:block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
+    margin-top: 10px;
     color: white;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(88, 80, 80);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -381,7 +382,7 @@ h1 {
 }
 
 .row img {
-    display: flex;
+    display: block;
     flex-direction: row;
     overflow: hidden;
     width:  300px;
@@ -394,8 +395,8 @@ h1 {
 
 }
 
-.row p {
-    display:flex;
+p {
+    display:block;
     margin-left: auto;
     margin-right: auto;
     width: 400px;
@@ -409,6 +410,8 @@ h1 {
     display:flex;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 100px;
     background-color: rgb(156, 159, 165);
     font-size: 20px;
