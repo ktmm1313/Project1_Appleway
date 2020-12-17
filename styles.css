@@ -346,7 +346,7 @@ body {
     src:url('../louis_george_caf/louis_george_caf') format('ttf');
 } */
 
-h1 {
+h2 {
     display:block;
     margin-left: auto;
     margin-right: auto;
@@ -358,7 +358,27 @@ h1 {
     text-align: center;
     width: 625px;
     font-family: 'Documenta';
+
 }
+
+button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: #242222;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 2px solid #dfd4d4;
+}
+
 .row h3 {
     display:block;
     margin-left: auto;
@@ -649,4 +669,3 @@ a {
 }
 
 /* ---------- END ABOUT US PAGE ---------- */
-
