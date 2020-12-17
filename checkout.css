@@ -18,7 +18,7 @@ body {
 }
 .cart {
   display: none;
-}
+} */
 .prompts {
   display: block;
   position: absolute;
@@ -186,7 +186,16 @@ input {
     display: flex;
     height: 100vh;
   }
-  .prompts {
+  /* Position the logo */
+  .logo {
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 95%;
+    /* flex-flow: none; */
+    /* width: 60%; */
+  }
+.prompts {
     display: block;
     position: absolute;
     text-align: center;
