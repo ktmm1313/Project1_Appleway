@@ -359,143 +359,42 @@ body {
         font-family: 'Futura';
     }
 
-@font-face {
-    font-family: 'Documenta';
-    src:url('../documenta/Documenta.otf') format('otf');
-}
-@font-face {
-    font-family: 'Cafe';
-    src:url('../louis_george_caf/louis_george_caf') format('ttf');
-} */
+    .row h3 {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        color: white;
+        background-color: rgb(0, 0, 0);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        text-align: center;
+        border: 5px 5px;
+        font-size: 24px;
+        width: 500px;
+        font-family: 'Cafe';
+        padding: 10px;
+    }
 
-h2 {
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    background-color: rgb(207, 17, 17);
-    color: white;
-    font-size: 74px;
-    font-weight: 100; 
-    text-align: center;
-    width: 625px;
-    font-family: 'Documenta';
+    .row img {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        width:  300px;
+        height: 300px;
+        object-fit: cover;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 5px solid #000000
 
-}
-
-.row button {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    background-color: #242222;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    border: 2px solid #dfd4d4;
-}
-
-.row h3 {
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    color: white;
-    background-color: rgb(88, 80, 80);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    text-align: center;
-    border: 5px 5px;
-    margin: auto;
-    font-size: 24px;
-    width: 500px;
-    font-family: 'Cafe';
-    padding: 10px;
-}
-
-.row img {
-    display: block;
-    flex-direction: row;
-    overflow: hidden;
-    width:  300px;
-    height: 300px;
-    object-fit: cover;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 5px solid #000000
-
-}
-
-.row p {
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    background-color: rgb(226, 93, 88);
-    font-size: 24px;
-    color: black;
-    text-align: center;
-    border: 5px solid #000000;
-}
-.price {
-    display:flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100px;
-    background-color: rgb(156, 159, 165);
-    font-size: 20px;
-    text-align: center;
-    border: 2px solid #000000;
-}
-/* .heading button {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #242222;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    border: 2px solid #dfd4d4;
-} */
-
-.row button {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #242222;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    border: 2px solid #dfd4d4;
-}
-
-/* ---------- BEGIN LOCATIONS PAGE ---------- */
+    }
 
     .row p {
-        display:flex;
+        display:block;
         margin-left: auto;
         margin-right: auto;
         width: 400px;
@@ -505,17 +404,36 @@ h2 {
         text-align: center;
         border: 5px solid #000000;
     }
+
     .price {
         display:flex;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
         width: 100px;
         background-color: rgb(156, 159, 165);
         font-size: 20px;
         text-align: center;
         border: 2px solid #000000;
     }
-    .heading button {
+    /* .heading button {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #242222;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        border: 2px solid #dfd4d4;
+    } */
+
+    .row button {
         display: flex;
         margin-left: auto;
         margin-right: auto;
@@ -531,58 +449,27 @@ h2 {
         border: 2px solid #dfd4d4;
     }
 
+
     /* ---------- BEGIN LOCATIONS PAGE ---------- */
 
-    .about-us {
-        display:block;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: rgb(207, 17, 17);
-        color: white;
-        font-size: 50px;
-        font-weight: 100; 
-        text-align: center;
-        width: 625px;
-        font-family: 'Futura';
-    }
-
-    section {
+    .locations {
         display: block;
         float: center;
-    }
-
-    .locations {
         color: white;
         background-color: none;
         position: relative;
-        top: 200px;
+        top: 100px;
         width: 75%;
-        margin: auto;
-        text-align: center;
-    }
-
-    .location2 {
-        color: white;
-        position: relative;
-        top: 200px;
-        width: 75%;
-        margin: auto;
-        text-align: center;
-    }
-
-    .location3 {
-        color: white;
-        position: absolute;
-        top: 200px;
-        width: 75%;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
         text-align: center;
     }
 
     /* ---------- END LOCATIONS PAGE ---------- */
 
 
-    /* ---------- BEGIN CONTACT FORM PAGE ---------- */
+    /* ---------- BEGIN CONTACT US PAGE ---------- */
 
     .contact-us {
         display:block;
@@ -644,7 +531,6 @@ h2 {
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
-
     }
 
     .form-container button {
@@ -666,11 +552,11 @@ h2 {
         -o-border-radius: 25px;
     }
 
-    a {
-        color: #ccc;
-        text-decoration: none;
+    /* a { */
+        /* color: #ccc; */
+        /* text-decoration: none; */
         /* text-align: center; */
-    }
+    /* } */
 
     /* ---------- END CONTACT US PAGE ---------- */
 
@@ -702,14 +588,6 @@ h2 {
         line-height: 1.5;
     }
 
-    /* .meet-us {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        color: white;
-        text-align: center;
-    } */
-
     .team {
         display: block;
         /* margin-left: auto; */
@@ -729,5 +607,6 @@ h2 {
         -o-transform: translate(-50%, -50%);
 
     }
-
 /* ---------- END ABOUT US PAGE ---------- */
+
+/* ---------- END DESKTOP LAYOUT ---------- */}
