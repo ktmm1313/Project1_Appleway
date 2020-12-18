@@ -359,7 +359,10 @@ body {
         font-family: 'Futura';
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> kim-appleway-branch
     .row h3 {
         display:block;
         margin-left: auto;
@@ -393,6 +396,7 @@ body {
         border: 5px solid #000000
 
     }
+<<<<<<< HEAD
 
 @font-face {
     font-family: 'Documenta';
@@ -605,9 +609,11 @@ button {
 }
 
 /* ---------- BEGIN LOCATIONS PAGE ---------- */
+=======
+>>>>>>> kim-appleway-branch
 
     .row p {
-        display:flex;
+        display:block;
         margin-left: auto;
         margin-right: auto;
         width: 400px;
@@ -617,17 +623,36 @@ button {
         text-align: center;
         border: 5px solid #000000;
     }
+
     .price {
         display:flex;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
         width: 100px;
         background-color: rgb(156, 159, 165);
         font-size: 20px;
         text-align: center;
         border: 2px solid #000000;
     }
-    .heading button {
+    /* .heading button {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #242222;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        border: 2px solid #dfd4d4;
+    } */
+
+    .row button {
         display: flex;
         margin-left: auto;
         margin-right: auto;
@@ -643,44 +668,26 @@ button {
         border: 2px solid #dfd4d4;
     }
 
+
     /* ---------- BEGIN LOCATIONS PAGE ---------- */
 
-    .about-us {
-        display:block;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: rgb(207, 17, 17);
-        color: white;
-        font-size: 50px;
-        font-weight: 100; 
-        text-align: center;
-        width: 625px;
-        font-family: 'Futura';
-    }
-
-    section {
-        display: block;
-        float: center;
-    }
-
-    .location1 {
-        color: white;
-        position: absolute;
-        top: 200px;
-        width: 75%;
-        margin: auto;
-        text-align: center;
-    }
-
+<<<<<<< HEAD
     .location3 {
         color: white;
         position: absolute;
     }
     .location2 {
+=======
+    .locations {
+        display: block;
+        float: center;
+>>>>>>> kim-appleway-branch
         color: white;
+        background-color: none;
         position: relative;
-        top: 200px;
+        top: 100px;
         width: 75%;
+<<<<<<< HEAD
         margin: auto;
         text-align: center;
     }
@@ -752,13 +759,18 @@ button {
         top: 200px;
         width: 75%;
         margin: auto;
+=======
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+>>>>>>> kim-appleway-branch
         text-align: center;
     }
 
     /* ---------- END LOCATIONS PAGE ---------- */
 
 
-    /* ---------- BEGIN CONTACT FORM PAGE ---------- */
+    /* ---------- BEGIN CONTACT US PAGE ---------- */
 
     .contact-us {
         display:block;
@@ -865,7 +877,6 @@ button {
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
-
     }
 
     .form-container button {
@@ -887,11 +898,11 @@ button {
         -o-border-radius: 25px;
     }
 
-    a {
-        color: #ccc;
-        text-decoration: none;
+    /* a { */
+        /* color: #ccc; */
+        /* text-decoration: none; */
         /* text-align: center; */
-    }
+    /* } */
 
     /* ---------- END CONTACT US PAGE ---------- */
 
@@ -923,14 +934,6 @@ button {
         line-height: 1.5;
     }
 
-    /* .meet-us {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        color: white;
-        text-align: center;
-    } */
-
     .team {
         display: block;
         /* margin-left: auto; */
@@ -950,4 +953,10 @@ button {
         -o-transform: translate(-50%, -50%);
 
     }
+<<<<<<< HEAD
 /* ---------- END ABOUT US PAGE ---------- */
+=======
+/* ---------- END ABOUT US PAGE ---------- */
+
+/* ---------- END DESKTOP LAYOUT ---------- */}
+>>>>>>> kim-appleway-branch
